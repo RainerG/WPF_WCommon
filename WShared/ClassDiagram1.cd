@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NS_Utilities.About" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAABAAAACAAgACAAAAAAAAAAAAABAABAA=</HashCode>
+      <FileName>About.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.BigNote" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAIACABAAAAAACAAAACAAAAAAAAAhAAAAAAgAA=</HashCode>
+      <FileName>BigNote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.Crc8" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAABAAAAAAAAhgAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Crc8.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.CrcCastagnoli" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>CrcCastagnoli.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.Memory" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CZBgSFRUEAQoAAwzAGAKAAEB+WSBAAAAAAoyRQAAYAE=</HashCode>
+      <FileName>Memory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.MessgeBox" Collapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAACAAAAAQAACAAIACAABEAEAAQAAAAAAAAAA=</HashCode>
+      <FileName>MessgeBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.UsageMonitor" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MIAAIAAAAIAAAAAAAIAAgACCAAQACABEAggAIAEAAAA=</HashCode>
+      <FileName>UsageMonitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.UserRichTextBox" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserRichTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.UserTimer" Collapsed="true">
+    <Position X="18.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAABAAACCEAAAFAAAAAAAAAAAgAAAAJIAAAAACAAgQ=</HashCode>
+      <FileName>UserTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.UserTickTimer" Collapsed="true">
+    <Position X="16.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kBAAAAAAAEAAAAAAAAAAAAAAAAAACAABAIEAAAAAAAA=</HashCode>
+      <FileName>UserTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.Utils" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yNBDQnzcxoGrCiw2JXmeIsMiaCevATkDAWoO5XiSZGk=</HashCode>
+      <FileName>Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.CriticalSectionLock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NS_Utilities.CriticalSection" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAEAAAAAAAAAAAEEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.Windows" Collapsed="true">
+    <Position X="11.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAABAAAAAACAQAAAAIAAgEAAAAAAAEAA=</HashCode>
+      <FileName>Windows.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Utilities.Window" Collapsed="true">
+    <Position X="9.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAABBAgAACAA=</HashCode>
+      <FileName>Windows.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_AppConfig.DialogPosSize" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAABAAAAAAAAAEAAAgACgAAAAAAAAAAAEAAkA=</HashCode>
+      <FileName>AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_AppConfig.AppSettings" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAEUAAAgBAAAAMIgABBAAQACBAiBACCAFUBgCDQCI=</HashCode>
+      <FileName>AppSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserCombo.ComboFilter" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAAACAAABAAAIKAEAACACAIAAAAAEIAAAAAAAA=</HashCode>
+      <FileName>ComboFilter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserCombo.FileComboBox" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAABAAAQAAIAAgAAAIAGACEADCACgAAAAABAA=</HashCode>
+      <FileName>FileComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserCombo.UserComboBox" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QICOAgAGgAAAAQAAQhACoAgCAqAAQAEMAAAKgSFIQAA=</HashCode>
+      <FileName>UserComboBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserCombo.UserDirSelect" Collapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAAAAICAAAAAACACAAAACACAAAAAAAAAACAAAQAA=</HashCode>
+      <FileName>UserControls\UserDirSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserCombo.UserFileSelect" Collapsed="true">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAIICAABgAAAADAAAQCAAAAAAAgACAAgAAAAAA=</HashCode>
+      <FileName>UserControls\UserFileSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Crypt.Crypt" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAEgAAAAAAAAQEAEAAIHyAIAQQAiAAAQgADIEAAAA=</HashCode>
+      <FileName>Crypt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Crypt.Encrypt" Collapsed="true">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAACAAAIIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Crypt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Crypt.SeednKey" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAQAAACAAAAACEAIAAgAkAQAAwABAAAAEQAgAEAAE=</HashCode>
+      <FileName>Crypt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Crypt.EtherFrame" Collapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Crypt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_WordExcel.ExcelChart" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAAAAAAAIBAAAAAAAABARAAACAAAAAAACAAAI=</HashCode>
+      <FileName>ExcelChart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_WordExcel.WordExcelExport" Collapsed="true">
+    <Position X="14.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JEAQBAASAiEgAgMGAICSQACCAAQiIwEAAABBEEAAEAA=</HashCode>
+      <FileName>WordExcelExport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_WordExcel.WordArgs" Collapsed="true">
+    <Position X="13" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAA=</HashCode>
+      <FileName>WordExcelExport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_WordExcel.NumFormat" Collapsed="true">
+    <Position X="18.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WordExcelExport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_WordExcel.ChartFormat" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>WordExcelExport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_WordExcel.XlCell" Collapsed="true">
+    <Position X="16.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>WordExcelExport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_ProgressDlg.ProgressDlg" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCAAAQhCBAARAIABSAAAECBCggAAAIIBAAAADCCgA=</HashCode>
+      <FileName>ProgressDlg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shared.Properties.Resources" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dotnetrix_Samples.MirroredTabControl" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAAAAAACBAAAChAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TabControlEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Trace.SelTraceLevel" Collapsed="true">
+    <Position X="18.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAiAAADEBAAGIAGCGACAAAAIAAAAgAEkAAQA=</HashCode>
+      <FileName>Trace\SelTraceLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Trace.TraceOutput" Collapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Trace\TraceOutput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Trace.TraceType" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAEAAACIAAAAAAMAAAA=</HashCode>
+      <FileName>Trace\UserTrace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_Trace.UserTrace" Collapsed="true">
+    <Position X="6" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQZBGSEAACCBAABBgkQACAgoAGgQAhQIJIgAAACIAEA=</HashCode>
+      <FileName>Trace\UserTrace.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserColor.ColorSelector" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAACAAAAAAgACIAAACECAAAAAAAAAQIAIAABA=</HashCode>
+      <FileName>UserControls\ColorSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserColor.UserColorPicker" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAIACAgAigAAACICAAAACIAACAAAAAAAA=</HashCode>
+      <FileName>UserControls\UserColorPicker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserColor.UserColorSelect" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAAAACgICIAIAKGGAQAAgAAAgAIAAAAAQ=</HashCode>
+      <FileName>UserControls\UserColorSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserColor.ColSelType" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAggAAQAAgAAAACIAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\UserColorSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.FindString" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEAAEACABEAAAAgCBAAICCSAABAGIAAAAAAEBAMA=</HashCode>
+      <FileName>UserControls\FindString.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.PreferencesUOList" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAggAAAACAgAACACAQABAIQAGAAIAAgkE=</HashCode>
+      <FileName>UserControls\PreferencesUOList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.PreferencesUOText" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAACAgEAYCHwAhAkgCCAgAACMCCcAgAIIAiACKIBA0A=</HashCode>
+      <FileName>UserControls\PreferencesUOText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.UserOutList" Collapsed="true">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAhEwD0KAyLEBhGEDQKsmpUCkDACgRIIAQiagERIjlE=</HashCode>
+      <FileName>UserControls\UserOutList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.XLColumn" Collapsed="true">
+    <Position X="18.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAA=</HashCode>
+      <FileName>UserControls\UserOutList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.UserOutText" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4ogSkQ0DQrf28wC+iQ+HWC2GGSAg0wEpbQJ/hRzJR1Y=</HashCode>
+      <FileName>UserControls\UserOutText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.RTLineType" Collapsed="true">
+    <Position X="14.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\UserOutText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.RecOut" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAIAAAAAAAAAAAAAAAIKAAAAABABAA=</HashCode>
+      <FileName>UserControls\UserOutText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserOut.MarkIndex" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>UserControls\UserOutText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserImage.UserImage" Collapsed="true">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAkAAAgCAgAAAAAACAAAICACAAAAAAAAAAAAAIIAA=</HashCode>
+      <FileName>UserControls\UserImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserImage.ImageParams" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAIAAAABAAA=</HashCode>
+      <FileName>UserControls\UserImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserList.UserFileListView" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AZEEgAQAAAAAABAAACBAAgAgABgAAAAAAAABIAQCAAA=</HashCode>
+      <FileName>UserFileListView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserList.UserListView" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAgCAQAAAEBAAABAAAAAACAAAQAAgAAAgSAAACI=</HashCode>
+      <FileName>UserListView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserList.ColMem" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>UserListView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserMenu.UserContextMenu" Collapsed="true">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserSocket.UserSocket" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>UserSocket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserTabControl.UserTabPage" Collapsed="true">
+    <Position X="13" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAQAAAAQAAEBAAAEAAAAAAAQAAAYAAAggBAAAAAA=</HashCode>
+      <FileName>UserTabControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserTabControl.UserTabControl" Collapsed="true">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAgAAAAAAAAAAAAAACAACAQAAAAAAAAAAAA=</HashCode>
+      <FileName>UserTabControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NS_UserTextEditor.UserTextEditor" Collapsed="true">
+    <Position X="14.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgCAiAACCAAAICgADAAAACCCAAAAEAMBAAIAQABEA=</HashCode>
+      <FileName>UserTextEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="21" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Enum Name="NS_UserCombo.UF_MODES" Collapsed="true">
+    <Position X="13" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAABAAAAAIAgAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>UserControls\UserFileSelect.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NS_Trace.TrcLvl" Collapsed="true">
+    <Position X="11.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAABAAAAAQAQAAAUAQACAAABAAAAAAEAAAEAAAAAAA=</HashCode>
+      <FileName>Trace\SelTraceLevel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NS_Trace.TraceReturn" Collapsed="true">
+    <Position X="9.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAACAAAAAAAAABAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Trace\UserTrace.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NS_UserOut.FilterOpt" Collapsed="true">
+    <Position X="6" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAIAAIAAAAAAAAAAAAAQAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>UserControls\UserOutList.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="NS_UserList.KIND_OF_TIME" Collapsed="true">
+    <Position X="7.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAABAAAAAAAAAAAAAAAAAAACAAIAAAACIAAQA=</HashCode>
+      <FileName>UserFileListView.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="NS_UserOut.dl_Close" Collapsed="true">
+    <Position X="6" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\UserOutList.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="NS_UserOut.dl_Filter" Collapsed="true">
+    <Position X="7.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControls\UserOutList.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
