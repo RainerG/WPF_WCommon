@@ -20,9 +20,18 @@ namespace Shared
     /// </summary>
     public partial class About:Window
     {
-        public About()
+        /***************************************************************************
+        SPECIFICATION: Members
+        CREATED:       22.11.2025
+        LAST CHANGE:   22.11.2025
+        ***************************************************************************/
+        private string m_Vers;
+
+        public About( string a_Vers )
         {
             InitializeComponent();
+
+            m_Vers = a_Vers;
         }
     }
 }

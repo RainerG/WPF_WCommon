@@ -5,20 +5,32 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Shared"
              mc:Ignorable="d" 
-             MaxHeight="100" MaxWidth="200" >
-    <StackPanel>
+             MaxHeight="300" MaxWidth="200" >
+    
+    <StackPanel Margin="10,10,10,10">
         <Label TextBlock.BaselineOffset="20"
-               HorizontalAlignment="Center"
+               HorizontalAlignment="Left"
                VerticalAlignment="Center"
-               FontSize="15"
+               FontSize="10"
                FontWeight="Bold"
                Content="Author: Rainer Gerlach" />
 
         <Label TextBlock.BaselineOffset="40"
-               HorizontalAlignment="Center"
+               HorizontalAlignment="Left"
                VerticalAlignment="Center"
-               FontSize="15"
+               FontSize="10"
+               FontWeight="Bold">
+               <TextBlock>
+                 <Run Text="Release: "/>
+                 <Run Text="{Binding m_Vers, RelativeSource={RelativeSource AncestorType=Window}}"/>
+               </TextBlock>
+        </Label>
+
+        <Label TextBlock.BaselineOffset="40"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               FontSize="10"
                FontWeight="Bold"
-               Content="Version: 1.0.0" />
+               Content="Built: " />
     </StackPanel>
 </Window>
