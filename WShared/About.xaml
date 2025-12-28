@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Shared"
              mc:Ignorable="d" 
+             Title="About" Height="Auto" Width="180"
              MaxHeight="300" MaxWidth="200" >
     
     <StackPanel Margin="10,10,10,10">
