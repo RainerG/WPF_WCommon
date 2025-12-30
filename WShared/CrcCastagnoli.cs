@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace NS_Utilities
+namespace NS_WUtilities
 {
     public class CrcCastagnoli
     {
@@ -102,7 +102,7 @@ namespace NS_Utilities
 
             foreach( UInt32 ui in SYS_cui32_ByteBasedCrc32CTable )
             {
-                Utils.U32ToByteList( ui, ref TabBase );
+                WUtils.U32ToByteList( ui, ref TabBase );
             }
         }
 
@@ -133,12 +133,12 @@ namespace NS_Utilities
                     /* 4 byte loop */
                     while (pDataIdx < length)
                     {
-                      data       = Utils.U32FromByteList(ref pData, ref pDataIdx); /* load 4 byte */   
+                      data       = WUtils.U32FromByteList(ref pData, ref pDataIdx); /* load 4 byte */   
       
                       index   = data ^ crc;       /* byte 4 */
                       index <<= 24;
                       index >>= 22;
-                      TabVal  = Utils.U32FromByteList( ref TabBase, ref index );   
+                      TabVal  = WUtils.U32FromByteList( ref TabBase, ref index );   
                       crc   >>= 8;
                       crc    ^= TabVal;
       
@@ -146,7 +146,7 @@ namespace NS_Utilities
                       index  ^= crc;
                       index <<= 24;
                       index >>= 22;
-                      TabVal  = Utils.U32FromByteList( ref TabBase, ref index );
+                      TabVal  = WUtils.U32FromByteList( ref TabBase, ref index );
                       crc   >>= 8;
                       crc    ^= TabVal;
       
@@ -154,7 +154,7 @@ namespace NS_Utilities
                       index  ^= crc;
                       index <<= 24;
                       index >>= 22;
-                      TabVal  = Utils.U32FromByteList( ref TabBase, ref index );
+                      TabVal  = WUtils.U32FromByteList( ref TabBase, ref index );
                       crc   >>= 8;
                       crc    ^=  TabVal;
       
@@ -162,7 +162,7 @@ namespace NS_Utilities
                       index  ^= crc;
                       index <<= 24;               /* AND 0xFF combined */
                       index >>= 22;               /* ... with *4       */
-                      TabVal  = Utils.U32FromByteList( ref TabBase, ref index );
+                      TabVal  = WUtils.U32FromByteList( ref TabBase, ref index );
                       crc   >>= 8;
                       crc    ^= TabVal;
                     }
@@ -172,13 +172,13 @@ namespace NS_Utilities
                     /* 4 byte loop */
                     while (pDataIdx < length)
                     {
-                      data    = Utils.U32FromByteList(ref pData, ref pDataIdx);  /* load 4 byte */   /* Lint info 826: area ok */
+                      data    = WUtils.U32FromByteList(ref pData, ref pDataIdx);  /* load 4 byte */   /* Lint info 826: area ok */
       
                       index   = data >> 24;       /* byte 1 */
                       index  ^= crc;
                       index <<= 24;               /* AND 0xFF combined */
                       index >>= 22;               /* ... with *4       */
-                      TabVal  = Utils.U32FromByteList( ref TabBase, ref index );
+                      TabVal  = WUtils.U32FromByteList( ref TabBase, ref index );
                       crc   >>= 8;
                       crc    ^= TabVal;
       
@@ -186,7 +186,7 @@ namespace NS_Utilities
                       index  ^= crc;
                       index <<= 24;
                       index >>= 22;
-                      TabVal  = Utils.U32FromByteList( ref TabBase, ref index );
+                      TabVal  = WUtils.U32FromByteList( ref TabBase, ref index );
                       crc   >>= 8;
                       crc    ^=  TabVal;
       
@@ -194,14 +194,14 @@ namespace NS_Utilities
                       index  ^= crc;
                       index <<= 24;
                       index >>= 22;
-                      TabVal  = Utils.U32FromByteList( ref TabBase, ref index );
+                      TabVal  = WUtils.U32FromByteList( ref TabBase, ref index );
                       crc   >>= 8;
                       crc    ^= TabVal;
       
                       index   = data ^ crc;       /* byte 4 */
                       index <<= 24;
                       index >>= 22;
-                      TabVal  = Utils.U32FromByteList( ref TabBase, ref index );
+                      TabVal  = WUtils.U32FromByteList( ref TabBase, ref index );
                       crc   >>= 8;
                       crc    ^= TabVal;
                     }

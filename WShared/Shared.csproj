@@ -391,12 +391,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AppSettingsXML.cs" />
-    <Compile Include="BigNote.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BigNote.Designer.cs">
-      <DependentUpon>BigNote.cs</DependentUpon>
-    </Compile>
     <Compile Include="ComboFilter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -406,10 +400,6 @@
     <Compile Include="Crc8.cs" />
     <Compile Include="CrcCastagnoli.cs" />
     <Compile Include="ExcelChart.cs" />
-    <Compile Include="FileComboBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="InterfaceCommon.cs" />
     <Compile Include="Memory.cs" />
     <Compile Include="MessgeBox.cs">
       <SubType>Form</SubType>
@@ -417,7 +407,6 @@
     <Compile Include="MessgeBox.Designer.cs">
       <DependentUpon>MessgeBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="NwMngemnt.cs" />
     <Compile Include="ProgressDlg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -432,41 +421,17 @@
     <Compile Include="TabControlEx.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Trace\SelTraceLevel.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Trace\SelTraceLevel.Designer.cs">
-      <DependentUpon>SelTraceLevel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Trace\UserTrace.cs" />
-    <Compile Include="Trace\TraceOutput.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UdsCommon.cs" />
-    <Compile Include="UsageMonitor.cs" />
     <Compile Include="UserControls\ColorSelector.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserControls\ColorSelector.designer.cs">
       <DependentUpon>ColorSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\FindString.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserControls\FindString.designer.cs">
-      <DependentUpon>FindString.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\PreferencesUOList.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserControls\PreferencesUOList.designer.cs">
       <DependentUpon>PreferencesUOList.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\PreferencesUOText.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserControls\PreferencesUOText.Designer.cs">
-      <DependentUpon>PreferencesUOText.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UserColorPicker.cs">
       <SubType>UserControl</SubType>
@@ -480,35 +445,11 @@
     <Compile Include="UserControls\UserColorSelect.Designer.cs">
       <DependentUpon>UserColorSelect.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UserDirSelect.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserDirSelect.Designer.cs">
-      <DependentUpon>UserDirSelect.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UserFileSelect.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserFileSelect.Designer.cs">
-      <DependentUpon>UserFileSelect.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\UserImage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UserControls\UserImage.Designer.cs">
       <DependentUpon>UserImage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UserOutText.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserOutText.designer.cs">
-      <DependentUpon>UserOutText.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UserOutList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserControls\UserOutList.designer.cs">
-      <DependentUpon>UserOutList.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UserProgressBar.cs">
       <SubType>UserControl</SubType>
@@ -523,12 +464,6 @@
     <Compile Include="UserTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="UserTextEditor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserComboBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="UserFileListView.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -539,25 +474,15 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="UserTimer.cs" />
-    <Compile Include="Utils.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Windows.cs" />
     <Compile Include="WordExcelExport.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WordExcelExport.designer.cs">
       <DependentUpon>WordExcelExport.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BigNote.resx">
-      <DependentUpon>BigNote.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="WUtils.cs" />
     <EmbeddedResource Include="ComboFilter.resx">
       <DependentUpon>ComboFilter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FileComboBox.resx">
-      <DependentUpon>FileComboBox.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MessgeBox.resx">
       <DependentUpon>MessgeBox.cs</DependentUpon>
@@ -574,53 +499,20 @@
       <DependentUpon>TabControlEx.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Trace\SelTraceLevel.resx">
-      <DependentUpon>SelTraceLevel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Trace\TraceOutput.resx">
-      <DependentUpon>TraceOutput.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ColorSelector.resx">
       <DependentUpon>ColorSelector.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\FindString.resx">
-      <DependentUpon>FindString.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\PreferencesUOList.resx">
       <DependentUpon>PreferencesUOList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\PreferencesUOText.resx">
-      <DependentUpon>PreferencesUOText.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserColorPicker.resx">
       <DependentUpon>UserColorPicker.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserDirSelect.resx">
-      <DependentUpon>UserDirSelect.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserFileSelect.resx">
-      <DependentUpon>UserFileSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserImage.resx">
       <DependentUpon>UserImage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserOutText.resx">
-      <DependentUpon>UserOutText.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UserOutList.resx">
-      <DependentUpon>UserOutList.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserProgressBar.resx">
       <DependentUpon>UserProgressBar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserTextEditor.resx">
-      <DependentUpon>UserTextEditor.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserComboBox.resx">
-      <DependentUpon>UserComboBox.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="WordExcelExport.resx">
       <DependentUpon>WordExcelExport.cs</DependentUpon>
@@ -654,7 +546,6 @@
     <None Include="ClassDiagram2.cd" />
     <None Include="packages.config" />
     <None Include="UserControls\UserOutListHelp.docx" />
-    <None Include="UserControls\UserOutTextHelp.docx" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">

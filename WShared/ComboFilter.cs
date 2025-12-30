@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using NS_AppConfig;
-using NS_Utilities;
+using NS_WUtilities;
 
 namespace NS_UserCombo
 {

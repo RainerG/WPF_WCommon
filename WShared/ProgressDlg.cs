@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using System.Threading;
 
 using NS_AppConfig;
-using NS_Utilities;
+using NS_WUtilities;
 
 namespace NS_ProgressDlg
 {

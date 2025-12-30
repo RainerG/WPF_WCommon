@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NS_Utilities
+namespace NS_WUtilities
 {
     /***************************************************************************
     SPECIFICATION: 

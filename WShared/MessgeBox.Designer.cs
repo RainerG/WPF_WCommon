@@ -1,4 +1,4 @@
-﻿namespace NS_Utilities
+﻿namespace NS_WUtilities
 {
     partial class MessgeBox
     {

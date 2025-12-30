@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using NS_Utilities;
+using NS_WUtilities;
 using System.IO;
 using System.Collections;
 using System.Drawing.Imaging;
@@ -107,7 +107,7 @@ namespace NS_UserList
 
             string entry = hti.Item.Text;
 
-            string tempDir = Utils.ConcatPaths(m_CurrDir,entry);
+            string tempDir = WUtils.ConcatPaths(m_CurrDir,entry);
 
             if ( Directory.Exists( tempDir ) )
             {
@@ -257,7 +257,7 @@ namespace NS_UserList
                     fn = fn.Remove(0,1);
                     fn = fn.Remove(fn.Length - 2, 2);
                 }
-                ret.Add(Utils.ConcatPaths(m_CurrDir,fn));
+                ret.Add(WUtils.ConcatPaths(m_CurrDir,fn));
             }
 
             return ret;
@@ -453,7 +453,7 @@ namespace NS_UserList
         ***************************************************************************/
         public string GetFullPath( string sFnameBody )
         {
-            string ret = Utils.ConcatPaths(CurrDir,sFnameBody);
+            string ret = WUtils.ConcatPaths(CurrDir,sFnameBody);
             ret += CurrExt.Substring(1);
 
             return ret;

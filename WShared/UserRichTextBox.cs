@@ -5,10 +5,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 
-using NS_Utilities;
+using NS_WUtilities;
 
 
-namespace NS_Utilities
+namespace NS_WUtilities
 {
     /***************************************************************************
     SPECIFICATION: 

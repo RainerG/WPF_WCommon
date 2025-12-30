@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using NS_AppConfig;
-using NS_Utilities;
+using NS_WUtilities;
 
 namespace NS_UserColor
 {
@@ -91,7 +91,7 @@ namespace NS_UserColor
         ***************************************************************************/
         private void textBoxColor_Click ( object sender, EventArgs e ) 
         { 
-            textBoxColor.BackColor = Utils.PickColor( textBoxColor.BackColor );
+            textBoxColor.BackColor = WUtils.PickColor( textBoxColor.BackColor );
         }
 
         /***************************************************************************

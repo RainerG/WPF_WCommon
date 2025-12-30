@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using NS_Utilities;
+using NS_WUtilities;
 using NS_AppConfig;
 using NS_UserTabControl;
 using NS_UserColor;

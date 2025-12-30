@@ -1,105 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="NS_Utilities.About" Collapsed="true">
+  <Class Name="NS_WUtilities.About" Collapsed="true">
     <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAACAAABAAAACAAgACAAAAAAAAAAAAABAABAA=</HashCode>
       <FileName>About.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.BigNote" Collapsed="true">
+  <Class Name="NS_WUtilities.BigNote" Collapsed="true">
     <Position X="9.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABgAAAIACABAAAAAACAAAACAAAAAAAAAhAAAAAAgAA=</HashCode>
       <FileName>BigNote.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Crc8" Collapsed="true">
+  <Class Name="NS_WUtilities.Crc8" Collapsed="true">
     <Position X="6" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAABAAAAAAAAhgAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>Crc8.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.CrcCastagnoli" Collapsed="true">
+  <Class Name="NS_WUtilities.CrcCastagnoli" Collapsed="true">
     <Position X="7.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>CrcCastagnoli.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Memory" Collapsed="true">
+  <Class Name="NS_WUtilities.Memory" Collapsed="true">
     <Position X="13" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CZBgSFRUEAQoAAwzAGAKAAEB+WSBAAAAAAoyRQAAYAE=</HashCode>
       <FileName>Memory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.MessgeBox" Collapsed="true">
+  <Class Name="NS_WUtilities.MessgeBox" Collapsed="true">
     <Position X="14.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIAAAACAAAAAQAACAAIACAABEAEAAQAAAAAAAAAA=</HashCode>
       <FileName>MessgeBox.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UsageMonitor" Collapsed="true">
+  <Class Name="NS_WUtilities.UsageMonitor" Collapsed="true">
     <Position X="7.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>MIAAIAAAAIAAAAAAAIAAgACCAAQACABEAggAIAEAAAA=</HashCode>
       <FileName>UsageMonitor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UserRichTextBox" Collapsed="true">
+  <Class Name="NS_WUtilities.UserRichTextBox" Collapsed="true">
     <Position X="7.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UserRichTextBox.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UserTimer" Collapsed="true">
+  <Class Name="NS_WUtilities.UserTimer" Collapsed="true">
     <Position X="18.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAABAAACCEAAAFAAAAAAAAAAAgAAAAJIAAAAACAAgQ=</HashCode>
       <FileName>UserTimer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UserTickTimer" Collapsed="true">
+  <Class Name="NS_WUtilities.UserTickTimer" Collapsed="true">
     <Position X="16.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>kBAAAAAAAEAAAAAAAAAAAAAAAAAACAABAIEAAAAAAAA=</HashCode>
       <FileName>UserTimer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Utils" Collapsed="true">
+  <Class Name="NS_WUtilities.Utils" Collapsed="true">
     <Position X="7.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>yNBDQnzcxoGrCiw2JXmeIsMiaCevATkDAWoO5XiSZGk=</HashCode>
-      <FileName>Utils.cs</FileName>
+      <FileName>WUtils.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.CriticalSectionLock" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="NS_WUtilities.CriticalSectionLock" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="11.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Utils.cs</FileName>
+      <FileName>WUtils.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="NS_Utilities.CriticalSection" Collapsed="true">
+  <Class Name="NS_WUtilities.CriticalSection" Collapsed="true">
     <Position X="9.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAEAAAAAAAAAAAEEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Utils.cs</FileName>
+      <FileName>WUtils.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Windows" Collapsed="true">
+  <Class Name="NS_WUtilities.Windows" Collapsed="true">
     <Position X="11.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAAABAAAAAACAQAAAAIAAgEAAAAAAAEAA=</HashCode>
       <FileName>Windows.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Window" Collapsed="true">
+  <Class Name="NS_WUtilities.Window" Collapsed="true">
     <Position X="9.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAABBAgAACAA=</HashCode>

@@ -17,13 +17,13 @@ using ICSharpCode.SharpZipLib.Tar;
 using ICSharpCode.SharpZipLib.GZip;
 using Microsoft.Win32;
 
-namespace NS_Utilities
+namespace NS_WUtilities
 {
 	/// <summary>
-	/// Summary description for Utils. 
+	/// Summary description for  
 	/// </summary>
 
-	public class Utils
+	public class WUtils
 	{
         [DllImport("kernel32.dll")]
         public static extern int GetVolumeInformation(string strPathName,
@@ -73,7 +73,7 @@ namespace NS_Utilities
         CREATED:       26.04.2006
         LAST CHANGE:   26.04.2006
         ***************************************************************************/
-        public Utils()
+        public WUtils()
 		{
 			//
 			// TODO: Add constructor logic here
@@ -257,14 +257,14 @@ namespace NS_Utilities
                 sect = sect.Remove( 0,3 );
             } while (sect.StartsWith("..\\"));
 
-            string path = Utils.GetCurrDir();
+            string path = GetCurrDir();
 
             for (int i=0; i<20; i++) 
             {
-                string pth = Utils.ConcatPaths( path, sect );
+                string pth = ConcatPaths( path, sect );
                 if (a_IsFile) { if (File     .Exists(pth)) return pth; } 
                 else          { if (Directory.Exists(pth)) return pth; }
-                path = Utils.GoOneUp( path, ! a_IsFile );
+                path = GoOneUp( path, ! a_IsFile );
             }
 
             return a_RelPath;
@@ -394,23 +394,23 @@ namespace NS_Utilities
         ***************************************************************************/
         static public string SearchDir( string a_Dir )
         {
-            List<string> segs = Utils.SplitExt( a_Dir, "\\" );
+            List<string> segs = SplitExt( a_Dir, "\\" );
             if (segs.Count == 0) return "";
 
             string dir        = segs[segs.Count-1].ToLower(); 
-            string path       = Utils.GetCurrDir();
+            string path       = GetCurrDir();
 
             m_FailedPaths.Clear();
 
-            string pth = Utils.ConcatPaths(path,dir);
+            string pth = ConcatPaths(path,dir);
 
             if (Directory.Exists(pth)) return pth;
 
-            for (int i=0; i<4; i++) path = Utils.GoOneUp(path,true);
+            for (int i=0; i<4; i++) path = GoOneUp(path,true);
 
             for (int i=0; i<10; i++ )
             {
-                path = Utils.GoOneUp(path,true);
+                path = GoOneUp(path,true);
 
                 if (!Directory.Exists(path)) return "";
 
@@ -495,13 +495,13 @@ namespace NS_Utilities
 
             if( ! File.Exists( a_File ) )
             {
-                string fn = Utils.GetFilename( a_File );
-                string po = Utils.GetPath( a_File );
-                string ps = Utils.CancelGoUps( po );
-                string pn = Utils.SearchDir( ps );
+                string fn = GetFilename( a_File );
+                string po = GetPath( a_File );
+                string ps = CancelGoUps( po );
+                string pn = SearchDir( ps );
                 if (pn != "")
                 {
-                    ret = Utils.ConcatPaths( pn, fn );
+                    ret = ConcatPaths( pn, fn );
                 }
                 else 
                 {
@@ -509,8 +509,8 @@ namespace NS_Utilities
 
                     for (int j=0; j<10; j++ )
                     {
-                        for ( int i=0; i<3; i++ ) po = Utils.GoOneUp( po, true );
-                        pn = Utils.SearchFileRecursively( fn, po );
+                        for ( int i=0; i<3; i++ ) po = GoOneUp( po, true );
+                        pn = SearchFileRecursively( fn, po );
 
                         if (File.Exists(pn) )
                         {
@@ -844,7 +844,7 @@ namespace NS_Utilities
 
                 if ( resp.StartsWith("0x") )
                 {
-                    int v = Utils.Hex2Int( resp );
+                    int v = Hex2Int( resp );
                     resp  = v.ToString();
                 }
 
@@ -1104,7 +1104,7 @@ namespace NS_Utilities
             {
                 if (d[0]=='A' || d[0]=='B') continue;
 
-                string vn = Utils.GetDriveName(d);
+                string vn = GetDriveName(d);
 
                 if (sVolName.Contains(vn))
                 {
@@ -1454,7 +1454,7 @@ namespace NS_Utilities
             {
                 args = RelPath2Abs( args, true );
 
-                string dir  = Utils.GetPath(args);
+                string dir  = GetPath(args);
                 if (dir == "" ) dir = Directory.GetCurrentDirectory();
                 
                 if ( ! Directory.Exists( dir ) )
@@ -1467,7 +1467,7 @@ namespace NS_Utilities
                     else return;
                 }
 
-                switch ( Utils.GetExtension(args).ToLower() )
+                switch ( GetExtension(args).ToLower() )
                 {
                     case "xls" :
                     case "xlsx":
@@ -1478,7 +1478,7 @@ namespace NS_Utilities
                     case "bin":
                         string pth = IsProgramInstalled( "HexView");
                         if (pth == "") pth = "c:\\Tools\\HexView\\hexview.exe";
-                        else           pth = Utils.ConcatPaths( pth, "hexview.exe" );
+                        else           pth = ConcatPaths( pth, "hexview.exe" );
 
                         if ( File.Exists( pth ) )
                         {
@@ -1525,7 +1525,7 @@ namespace NS_Utilities
             {
                 args = RelPath2Abs( args, true );
 
-                string dir  = Utils.GetPath(args);
+                string dir  = GetPath(args);
                 if (dir == "" ) dir = Directory.GetCurrentDirectory();
                 
                 if ( ! Directory.Exists( dir ) )
@@ -1542,10 +1542,10 @@ namespace NS_Utilities
 
                 if (a_Path)
                 {
-                    pth = Utils.GetPath( args );
+                    pth = GetPath( args );
 
-                    string tcp = Utils.IsProgramInstalled( "Total Commander" );
-                    tcp = Utils.ConcatPaths( tcp,  "TOTALCMD64.EXE" );
+                    string tcp = IsProgramInstalled( "Total Commander" );
+                    tcp = ConcatPaths( tcp,  "TOTALCMD64.EXE" );
 
                     if ( File.Exists( tcp ) )
                     {
@@ -1990,12 +1990,12 @@ namespace NS_Utilities
         {
             List<byte> btarr = new List<byte>();
             
-            List<string> segs = Utils.ChopByteStr( a_BtArr );
+            List<string> segs = ChopByteStr( a_BtArr );
             if (segs == null) return false;
 
             foreach( string bt in segs )
             {
-                Byte b = Utils.Hex2Byte(bt); 
+                Byte b = Hex2Byte(bt); 
                 btarr.Add( b );
             }
 
@@ -2018,7 +2018,7 @@ namespace NS_Utilities
         ***************************************************************************/
         static public bool ByteListCmp( List<string> a_Arr, int a_Start, string a_BtArr )
         {
-            List<string> segs = Utils.ChopByteStr( a_BtArr );
+            List<string> segs = ChopByteStr( a_BtArr );
             if (segs == null) return false;
 
             int cnt = segs.Count;
@@ -2060,7 +2060,7 @@ namespace NS_Utilities
         {
             string line = a_ByteStr;
 
-            List<string> segs = Utils.SplitExt( line, " ,\t" );
+            List<string> segs = SplitExt( line, " ,\t" );
 
             if ( segs.Count == 0 )   return null;
             if (! IsHex(segs[0]) )   return null;
@@ -2080,7 +2080,7 @@ namespace NS_Utilities
                 List<string> lst = segs.FindAll( s => s.Length > 2 || ! IsHex(s) );
                 foreach ( string l in lst )
                 {
-                    if (Utils.Str2UInt(l) > 0xff) segs.Remove( l );
+                    if (Str2UInt(l) > 0xff) segs.Remove( l );
                 }
             }
 
@@ -2147,7 +2147,7 @@ namespace NS_Utilities
             while(hexstr.Length > 1)
             {
                 string hex = hexstr.Substring(0,2);
-                ret.Add( Utils.Hex2Byte(hex) );
+                ret.Add( Hex2Byte(hex) );
                 hexstr = hexstr.Remove(0,2);
             }
 
@@ -2675,7 +2675,7 @@ namespace NS_Utilities
         public static string IPv6Adr2Str( string a_Adr )
         {
             string       ret  = "";
-            List<string> segs = Utils.SplitExt2( a_Adr, ":" );
+            List<string> segs = SplitExt2( a_Adr, ":" );
 
             int cnt   = segs.Count;
             int fidx  = segs.FindIndex    ( s => s=="" );
@@ -2711,12 +2711,12 @@ namespace NS_Utilities
             List<string> segs = null;
             if ( a_IpAdr.Contains(".") )
             { // IP4
-                segs = Utils.SplitExt2( a_IpAdr, "." );
+                segs = SplitExt2( a_IpAdr, "." );
                 if ( segs.Count == 4 ) return true;
             }
             else 
             { // IP6
-                segs = Utils.SplitExt2( a_IpAdr, ":" );
+                segs = SplitExt2( a_IpAdr, ":" );
                 int fi = segs.FindIndex( s => s == "" );
                 if ( fi > 0 && fi < segs.Count - 1 ) return true;
                 if ( fi == -1 )
@@ -2740,11 +2740,11 @@ namespace NS_Utilities
 
             string adr = IPv6Adr2Str( a_Adr );
 
-            List<string> ips = Utils.SplitExt( adr, ":" );
+            List<string> ips = SplitExt( adr, ":" );
 
             foreach( string ip in ips )
             {
-                ret.Add( (ushort)Utils.Hex2UInt( ip ) );
+                ret.Add( (ushort)Hex2UInt( ip ) );
             }
 
             return ret;
@@ -2758,8 +2758,8 @@ namespace NS_Utilities
         public static void Mac2Lst( string a_MAC, ref List<byte> r_Mac )
         {
             r_Mac.Clear();
-            List<string> segs = Utils.SplitExt( a_MAC, ":" );
-            foreach( string s in segs ) r_Mac.Add( (byte)Utils.Hex2Byte(s) );
+            List<string> segs = SplitExt( a_MAC, ":" );
+            foreach( string s in segs ) r_Mac.Add( (byte)Hex2Byte(s) );
         }
 
         /***************************************************************************
@@ -2792,7 +2792,7 @@ namespace NS_Utilities
                 int idx = 0;
                 while ( ! File.Exists( helpfile ) )
                 {
-                    helpfile = Utils.GoOneUp( helpfile );
+                    helpfile = GoOneUp( helpfile );
                     if ( ++idx > 3 )  break;
                 }
 
@@ -3364,7 +3364,7 @@ namespace NS_Utilities
         public static void EditIncludes( string a_Filename, List<string> a_Keys )
         {
             string file = a_Filename;
-            string path = Utils.GetPath( file );
+            string path = GetPath( file );
 
             List<string> incs = new List<string>();
 
@@ -3384,7 +3384,7 @@ namespace NS_Utilities
                         if ( HasKey( segs[0], a_Keys) )
                         {
                             incs.Add(segs[1]);
-                            string f = Utils.ConcatPaths( path, segs[1] );
+                            string f = ConcatPaths( path, segs[1] );
                             EditIncludes( f, a_Keys );  // recursive call
                         }
                     }
@@ -3491,9 +3491,9 @@ namespace NS_Utilities
         ***************************************************************************/
         //public static bool FileOpenDlg( ref string a_Fname, bool a_Write )
         //{
-        //    string path = Utils.GetPath        ( a_Fname );
-        //    string name = Utils.GetFilenameBody( a_Fname );
-        //    string ext  = Utils.GetExtension   ( a_Fname );
+        //    string path = GetPath        ( a_Fname );
+        //    string name = GetFilenameBody( a_Fname );
+        //    string ext  = GetExtension   ( a_Fname );
 
         //    FileDialog dlg = null;
 
@@ -3532,7 +3532,7 @@ namespace NS_Utilities
             if (sttix >= endix) return ret;
             string args = a_Csv.Substring(sttix+1,endix-sttix-1);
             a_Csv = a_Csv.Remove(sttix,endix-sttix+1);
-            ret = Utils.SplitExt(args,",");
+            ret = SplitExt(args,",");
             return ret;
         }
 
@@ -3724,7 +3724,7 @@ namespace NS_Utilities
             o_Err = "";
             if ( ! File.Exists(a_ContFile) ) return false;
             string curdir = Directory.GetCurrentDirectory();
-            Directory.SetCurrentDirectory( Utils.GetPath(a_ContFile) );
+            Directory.SetCurrentDirectory( GetPath(a_ContFile) );
             ProcessStartInfo pro = new ProcessStartInfo();
             pro.WindowStyle = ProcessWindowStyle.Hidden;
             pro.FileName    = ConcatPaths( Application.StartupPath, "7z.exe" );
@@ -3752,10 +3752,10 @@ namespace NS_Utilities
         {
             string std,err;
 
-            string pth = Utils.GetPath        ( a_CtrFile );
-            string ext = Utils.GetExtension   ( a_CtrFile );
-            string fn  = Utils.GetFilename    ( a_CtrFile );
-            string fnb = Utils.GetFilenameBody( a_CtrFile );
+            string pth = GetPath        ( a_CtrFile );
+            string ext = GetExtension   ( a_CtrFile );
+            string fn  = GetFilename    ( a_CtrFile );
+            string fnb = GetFilenameBody( a_CtrFile );
 
             string nf  = fnb + "_1." + ext;
 
@@ -3765,7 +3765,7 @@ namespace NS_Utilities
 
             if ( ! std.Contains( nf ) ) return a_CtrFile;  // if new file name exist in the container
 
-            fn = a_WithPath ? Utils.ConcatPaths( pth, nf ) : nf;
+            fn = a_WithPath ? ConcatPaths( pth, nf ) : nf;
 
             return fn;
         }
@@ -3795,7 +3795,7 @@ namespace NS_Utilities
 
                     case "tgz":
                         ctrpth = RenCtrInCtr( a_ContnerPth );
-                        if ( ctrpth != a_ContnerPth ) ret = Exec7Z( "x ", a_ContnerPth, Utils.GetFilename( ctrpth ), out std, out err );  // open the container in the container
+                        if ( ctrpth != a_ContnerPth ) ret = Exec7Z( "x ", a_ContnerPth, GetFilename( ctrpth ), out std, out err );  // open the container in the container
                         break;
 
                     case "zip":
@@ -3826,7 +3826,7 @@ namespace NS_Utilities
         ***************************************************************************/
         public static string ExpandPthWldcrd( string a_Path )
         {
-            List<string> segs = Utils.SplitExt( a_Path, "\\/" );
+            List<string> segs = SplitExt( a_Path, "\\/" );
 
             int ix = segs.FindIndex( p => p.Contains("*") || p.Contains("?") );
 
@@ -3835,7 +3835,7 @@ namespace NS_Utilities
             string pth = "";
             for( int i = 0; i< ix; i++ )
             {
-                pth = Utils.ConcatPaths( pth, segs[i] );
+                pth = ConcatPaths( pth, segs[i] );
             }
 
             string[] dirs = Directory.GetDirectories( pth, segs[ix] );
@@ -3851,7 +3851,7 @@ namespace NS_Utilities
 
             for ( int i=ix+1; i< segs.Count; i++ )
             {
-                pth = Utils.ConcatPaths( pth, segs[i] );
+                pth = ConcatPaths( pth, segs[i] );
             }
 
             return pth;
@@ -3885,10 +3885,10 @@ namespace NS_Utilities
         ***************************************************************************/
         public static List<string> ParseIpPort( string a_IpPrt )
         {
-            List<string> segs = Utils.SplitExt( a_IpPrt, ":" );
+            List<string> segs = SplitExt( a_IpPrt, ":" );
             if (segs.Count > 2) // ip6
             {
-                segs = Utils.SplitExt( a_IpPrt, "-" );
+                segs = SplitExt( a_IpPrt, "-" );
             }
             return segs;
         }
@@ -3912,11 +3912,11 @@ namespace NS_Utilities
 
             int nrinst = procs.Length;
 
-            string fn = Utils.GetFilenameBody( fname, true );
+            string fn = GetFilenameBody( fname, true );
 
             char last = fn[fn.Length-1];
 
-            if ( Utils.IsNr(last) ) fn = fn.Remove( fn.Length-1, 1 );
+            if ( IsNr(last) ) fn = fn.Remove( fn.Length-1, 1 );
 
             fn += nrinst.ToString();
             fname = fn += ".ini";

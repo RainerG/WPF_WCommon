@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Diagnostics;
 using System.IO;
 
-namespace NS_Utilities
+namespace NS_WUtilities
 {
     /***************************************************************************
     SPECIFICATION: 
@@ -47,7 +48,7 @@ namespace NS_Utilities
             }
             catch ( System.Exception ex ) 
             {
-                MessgeBox.Show( ex.Message, "Error extracting 7Z archive" );
+                MessageBox.Show( ex.Message, "Error extracting 7Z archive" );
             }
         }
 

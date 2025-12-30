@@ -6,9 +6,9 @@ using System.Threading;
 using System.Diagnostics;
 using System.Drawing;
 
-using NS_Trace;
+//using NS_Trace;
 
-namespace NS_Utilities  
+namespace NS_WUtilities  
 {
     public class UserTimer
     {
@@ -25,7 +25,7 @@ namespace NS_Utilities
         CREATED:       11.09.2013
         LAST CHANGE:   21.03.2016
         ***************************************************************************/
-        private const uint  TRACELVL = (uint)TrcLvl.TL_Timer;
+        private const uint  TRACELVL = 0; //(uint)TrcLvl.TL_Timer;
         private       Color TRACECOL = Color.Orange;
 
         public delegate void dl_ExpiredHandler( int iTime );
@@ -76,7 +76,7 @@ namespace NS_Utilities
 
             if (ret) return;
 
-            UserTrace.Log( string.Format("{1} expired ({0} ms)", m_iTime, m_Name), TRACELVL, TRACECOL );
+            //UserTrace.Log( string.Format("{1} expired ({0} ms)", m_iTime, m_Name), TRACELVL, TRACECOL );
 
             if ( m_eExpiredHandler != null ) m_eExpiredHandler( m_iTime );
         }
@@ -98,7 +98,7 @@ namespace NS_Utilities
                 m_Timer.Change( a_iMilliSec, Timeout.Infinite );
             }
 
-            UserTrace.Log( string.Format("{1} started ({0} ms)", m_iTime, m_Name ),TRACELVL, TRACECOL );
+            //UserTrace.Log( string.Format("{1} started ({0} ms)", m_iTime, m_Name ),TRACELVL, TRACECOL );
         }   
 
 
@@ -121,7 +121,7 @@ namespace NS_Utilities
                 m_Timer.Change( m_iTime, Timeout.Infinite );
             }
 
-            UserTrace.Log( string.Format("{1} restarted ({0} ms)", m_iTime, m_Name ), TRACELVL, TRACECOL );
+            //UserTrace.Log( string.Format("{1} restarted ({0} ms)", m_iTime, m_Name ), TRACELVL, TRACECOL );
         }
 
 
@@ -132,7 +132,7 @@ namespace NS_Utilities
         ***************************************************************************/
         public void Stop()
         {
-            UserTrace.Log( string.Format("{1} stopped ({0} ms)", m_iTime, m_Name ), TRACELVL, TRACECOL );
+            //UserTrace.Log( string.Format("{1} stopped ({0} ms)", m_iTime, m_Name ), TRACELVL, TRACECOL );
 
             lock(this) 
             {

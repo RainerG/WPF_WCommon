@@ -14,7 +14,7 @@ using Word  = Microsoft.Office.Interop.Word;
 using Excel = Microsoft.Office.Interop.Excel; 
 
 using NS_UserList;
-using NS_Utilities;
+using NS_WUtilities;
 //using Microsoft.Office.Interop.Word;
 
 namespace NS_WordExcel

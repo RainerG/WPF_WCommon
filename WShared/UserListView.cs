@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Collections;
 using System.Drawing;
 
-using NS_Utilities;
+using NS_WUtilities;
 
 namespace NS_UserList
 {
@@ -226,7 +226,7 @@ namespace NS_UserList
                 if ( b.SubItems.Count <= m_Col )
                     return 1;
 
-                //Utils.Str2Int()
+                //WUtils.Str2Int()
                 //int ai = int.Parse( a.SubItems[m_Col].Text );
                 //int bi = int.Parse( b.SubItems[m_Col].Text );
 

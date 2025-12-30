@@ -1,210 +1,210 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="NS_Utilities._7zipArchive" Collapsed="true">
+  <Class Name="NS_WUtilities._7zipArchive" Collapsed="true">
     <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>7zipArchive.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.About" Collapsed="true">
+  <Class Name="NS_WUtilities.About" Collapsed="true">
     <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAACAAABAAAACAAgACAAAAAAAAAAAAABAABAA=</HashCode>
       <FileName>About.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.BigNote" Collapsed="true">
+  <Class Name="NS_WUtilities.BigNote" Collapsed="true">
     <Position X="11.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABgAAAIACABAAAAAACAAAACAAAAAAAAAhAAAAAAgAA=</HashCode>
       <FileName>BigNote.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Crc8" Collapsed="true">
+  <Class Name="NS_WUtilities.Crc8" Collapsed="true">
     <Position X="9.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAAABAAAAAAAAhgAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>Crc8.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.CrcCastagnoli" Collapsed="true">
+  <Class Name="NS_WUtilities.CrcCastagnoli" Collapsed="true">
     <Position X="11.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>CrcCastagnoli.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.InterfaceParamsCommon" Collapsed="true">
+  <Class Name="NS_WUtilities.InterfaceParamsCommon" Collapsed="true">
     <Position X="3.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAAAAFAAAAYAAQQQCAAAAEAQgAQAAAAAAAAA=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.InterfaceCommon" Collapsed="true">
+  <Class Name="NS_WUtilities.InterfaceCommon" Collapsed="true">
     <Position X="13" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>5QRcRCRwiCY0SEhtQLUC+YPyJQCGABIIAQAiwGFrCMY=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.CanParams" Collapsed="true">
+  <Class Name="NS_WUtilities.CanParams" Collapsed="true">
     <Position X="13" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAEAIABQhAAAAEARkAREgEQBAiAAABAAkUEEEAJAADI=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.EthParams" Collapsed="true">
+  <Class Name="NS_WUtilities.EthParams" Collapsed="true">
     <Position X="3.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CBAAAAAAAABAAAAgBAJBCAEQAqA4QBAEFAEACAAYAAA=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.IntfceParms" Collapsed="true">
+  <Class Name="NS_WUtilities.IntfceParms" Collapsed="true">
     <Position X="14.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AEAEZAAAAAQIQABAAAQCAAAAIigCCAAAAAAABAAAAQE=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.FlashParms" Collapsed="true">
+  <Class Name="NS_WUtilities.FlashParms" Collapsed="true">
     <Position X="9.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAEQIgAAAAAAAACAAACwAiIAAIAAAAAAAAAAgSI=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.EthMsg" Collapsed="true">
+  <Class Name="NS_WUtilities.EthMsg" Collapsed="true">
     <Position X="20" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>MMCyBqMBVJQgwIAAhUBxOQCAEgIQUHMIEL4rTQVSDAo=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.EthAddrs" Collapsed="true">
+  <Class Name="NS_WUtilities.EthAddrs" Collapsed="true">
     <Position X="18.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAgAAADAAQAICAAAAAQAICgQAAAAgEAAAAABAIAE=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.ConnectParms" Collapsed="true">
+  <Class Name="NS_WUtilities.ConnectParms" Collapsed="true">
     <Position X="7.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAgAAARAAAQAAEAAgAAAIACAAgAAAAAAAAAAABAAIEA=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Memory" Collapsed="true">
+  <Class Name="NS_WUtilities.Memory" Collapsed="true">
     <Position X="6" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CZBgSFRUEAQoAAwzAGAKAAEB+WSBAAAAEAoyRQgAYAE=</HashCode>
       <FileName>Memory.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.MessgeBox" Collapsed="true">
+  <Class Name="NS_WUtilities.MessgeBox" Collapsed="true">
     <Position X="7.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIAAAAKQAAAAQAACAAIACAABEAEAAQAAAAAAAAAA=</HashCode>
       <FileName>MessgeBox.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.NwMngemnt" Collapsed="true">
+  <Class Name="NS_WUtilities.NwMngemnt" Collapsed="true">
     <Position X="14.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BIEAIACAJAAESIOlIAFEKFRAHgACKABKBAqIAC4AAAA=</HashCode>
       <FileName>NwMngemnt.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.NwMgmnt" Collapsed="true">
+  <Class Name="NS_WUtilities.NwMgmnt" Collapsed="true">
     <Position X="13" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>UAEgIICUJAAAAEIBwAFECERgGAQIQBAIBAAMACgAIaQ=</HashCode>
       <FileName>NwMngemnt.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UdsData" Collapsed="true">
+  <Class Name="NS_WUtilities.UdsData" Collapsed="true">
     <Position X="18.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAADAAEBABggAgAAEBAAgAAwBAgQAAAAQBEAQA=</HashCode>
       <FileName>UdsCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UDS_GuiParms" Collapsed="true">
+  <Class Name="NS_WUtilities.UDS_GuiParms" Collapsed="true">
     <Position X="14.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAQACACAAAgAAAAAAAAgCAAgEAEIAAAAAAA=</HashCode>
       <FileName>UdsCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UDS_Params" Collapsed="true">
+  <Class Name="NS_WUtilities.UDS_Params" Collapsed="true">
     <Position X="16.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UdsCommon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UsageMonitor" Collapsed="true">
+  <Class Name="NS_WUtilities.UsageMonitor" Collapsed="true">
     <Position X="20" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>MIAAIAAAAIAAAAAAAIAAiACCAAQBCABEAggAIAEAAAA=</HashCode>
       <FileName>UsageMonitor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UserRichTextBox" Collapsed="true">
+  <Class Name="NS_WUtilities.UserRichTextBox" Collapsed="true">
     <Position X="20" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UserRichTextBox.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UserTimer" Collapsed="true">
+  <Class Name="NS_WUtilities.UserTimer" Collapsed="true">
     <Position X="14.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAABBAAACCEAAAFAAAAAAAAAAAgAAAAJIAAAAACAAgQ=</HashCode>
       <FileName>UserTimer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.UserTickTimer" Collapsed="true">
+  <Class Name="NS_WUtilities.UserTickTimer" Collapsed="true">
     <Position X="13" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>kAAAAAAAAAAAAAAAAAAAAAAAAAAACAABAIgAAAAAAAA=</HashCode>
       <FileName>UserTimer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Utils" Collapsed="true">
+  <Class Name="NS_WUtilities.Utils" Collapsed="true">
     <Position X="18.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>2NBDynzc5qGrCi62JX2essMyaCe/ATkDAWoO7XiTZH0=</HashCode>
-      <FileName>Utils.cs</FileName>
+      <FileName>WUtils.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.CriticalSectionLock" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="NS_WUtilities.CriticalSectionLock" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="14.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Utils.cs</FileName>
+      <FileName>WUtils.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="NS_Utilities.CriticalSection" Collapsed="true">
+  <Class Name="NS_WUtilities.CriticalSection" Collapsed="true">
     <Position X="13" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAEAAAAAAAAAAAEEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Utils.cs</FileName>
+      <FileName>WUtils.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Windows" Collapsed="true">
+  <Class Name="NS_WUtilities.Windows" Collapsed="true">
     <Position X="6" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAgAAABAAAAAACAQAAAAIAAgEAAAAAAAEAA=</HashCode>
       <FileName>Windows.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NS_Utilities.Window" Collapsed="true">
+  <Class Name="NS_WUtilities.Window" Collapsed="true">
     <Position X="20" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAACABBAgAACAI=</HashCode>
@@ -532,42 +532,42 @@
       <FileName>UserTextEditor.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Enum Name="NS_Utilities.ERROR_CODES" Collapsed="true">
+  <Enum Name="NS_WUtilities.ERROR_CODES" Collapsed="true">
     <Position X="6" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAIIAAAAAAAAACAAAE=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="NS_Utilities.PROT_IDS" Collapsed="true">
+  <Enum Name="NS_WUtilities.PROT_IDS" Collapsed="true">
     <Position X="13" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABIAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="NS_Utilities.ETHPROT" Collapsed="true">
+  <Enum Name="NS_WUtilities.ETHPROT" Collapsed="true">
     <Position X="7.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAACACAAAAABAQAAAAAI=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="NS_Utilities.TCPFLGS" Collapsed="true">
+  <Enum Name="NS_WUtilities.TCPFLGS" Collapsed="true">
     <Position X="16.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAAAKAAABAAAAAAEIEAAAAAAAAAAAI=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="NS_Utilities.TCPSTATES" Collapsed="true">
+  <Enum Name="NS_WUtilities.TCPSTATES" Collapsed="true">
     <Position X="18.25" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAEgAAAAABABAAA=</HashCode>
       <FileName>InterfaceCommon.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="NS_Utilities.ProtTyp" Collapsed="true">
+  <Enum Name="NS_WUtilities.ProtTyp" Collapsed="true">
     <Position X="14.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>

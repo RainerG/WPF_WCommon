@@ -12,7 +12,7 @@ using System.Security;
 using System.Runtime.Serialization.Formatters.Binary;
 
 //using NS_UserCombo;
-using NS_Utilities;
+using NS_WUtilities;
 
 /***************************************************************************
 SPECIFICATION: Contains methods for storing and loading application settings
@@ -353,7 +353,7 @@ namespace NS_AppConfig
         ***************************************************************************/
         //public bool Export( ref string a_Fname )
         //{
-        //    if ( Utils.FileOpenDlg( ref a_Fname, true ) )
+        //    if ( WUtils.FileOpenDlg( ref a_Fname, true ) )
         //    {
         //        OpenWrite( a_Fname );
 
@@ -382,7 +382,7 @@ namespace NS_AppConfig
         ***************************************************************************/
         //public bool Import( ref string a_Fname )
         //{
-        //    if ( Utils.FileOpenDlg( ref a_Fname, false ) )
+        //    if ( WUtils.FileOpenDlg( ref a_Fname, false ) )
         //    {
         //        bool ok = OpenRead( a_Fname );
 
@@ -405,19 +405,19 @@ namespace NS_AppConfig
         ***************************************************************************/
         public void MakeExportFname( ref string a_Fname, string a_PostFx )
         {
-            string fnbody = Utils.GetFilenameBody( a_Fname );
-            string path   = Utils.GetPath        ( a_Fname );
-            string ext    = Utils.GetExtension   ( a_Fname );
+            string fnbody = WUtils.GetFilenameBody( a_Fname );
+            string path   = WUtils.GetPath        ( a_Fname );
+            string ext    = WUtils.GetExtension   ( a_Fname );
             string comp   = SystemInformation.ComputerName;
 
             bool fexists  = File.Exists( a_Fname );
 
-            List<string> segs = Utils.SplitExt( fnbody, "_-" );
+            List<string> segs = WUtils.SplitExt( fnbody, "_-" );
             int nrsgs = segs.Count;
 
             string nr = segs[nrsgs-1];
             int inr = -1;
-            if ( Utils.IsNrStr(nr) ) inr = Utils.Str2Int(nr);
+            if ( WUtils.IsNrStr(nr) ) inr = WUtils.Str2Int(nr);
 
             if (nrsgs == 4)
             {
@@ -425,7 +425,7 @@ namespace NS_AppConfig
                 for (int i=0; i<nrsgs-1; i++) fn += segs[i] + "_";
                 fn += nr;
                 fn += "." + ext;
-                fexists = File.Exists( Utils.ConcatPaths( path, fn ) );
+                fexists = File.Exists( WUtils.ConcatPaths( path, fn ) );
             }
 
             string newbdy = "";
@@ -437,13 +437,13 @@ namespace NS_AppConfig
                 else                         newbdy = segs[0] + "_" + a_PostFx + "_" + comp + "_" + nr;
             }
 
-            string newfile = Utils.ConcatPaths( path, newbdy ) + "." + ext;
+            string newfile = WUtils.ConcatPaths( path, newbdy ) + "." + ext;
             
             int brkidx = 0;
 
             while ( File.Exists( newfile ) )
             {
-                newbdy = Utils.GetFilenameBody( newfile );
+                newbdy = WUtils.GetFilenameBody( newfile );
                 if (inr == -1) newbdy += "_1";
                 else
                 {
@@ -452,7 +452,7 @@ namespace NS_AppConfig
                     newbdy += "_" + (++inr).ToString();
                 }
 
-                newfile = Utils.ConcatPaths( path, newbdy ) + "." + ext;
+                newfile = WUtils.ConcatPaths( path, newbdy ) + "." + ext;
 
                 if (--brkidx > 100) break;
             }

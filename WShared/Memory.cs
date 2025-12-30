@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NS_Utilities
+namespace NS_WUtilities
 {
     /***************************************************************************
     SPECIFICATION: 
@@ -937,7 +937,7 @@ namespace NS_Utilities
             while(hexstr.Length > 1)
             {
                 string hex = hexstr.Substring(0,2);
-                ret.Add( Utils.Hex2Byte(hex) );
+                ret.Add( WUtils.Hex2Byte(hex) );
                 hexstr = hexstr.Remove(0,2);
             }
 

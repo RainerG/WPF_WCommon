@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 
 using NS_AppConfig;
-using NS_Utilities;
+using NS_WUtilities;
 
 namespace NS_UserTabControl 
 {
@@ -200,7 +200,7 @@ namespace NS_UserTabControl
                 TabPage tp = TabPages[i];
 
                 tp.TabIndex = i;
-                Utils.InitCtrl(tp);
+                WUtils.InitCtrl(tp);
             }
         }
     }
